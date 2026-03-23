@@ -848,6 +848,14 @@ a:hover {
   padding: 0;
   display: grid;
   gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* Celda del grid = <li>; con tarjeta clicable, el <a> solo rellena el <li> (el fondo va en el <li>) */
+.service-subgrid > li {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 @media (min-width: 560px) {
@@ -901,7 +909,14 @@ a:hover {
 .service-subcard--link {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1 1 auto;
+  align-self: stretch;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  background: transparent;
+  box-shadow: none;
   color: inherit;
   text-decoration: none;
 }
