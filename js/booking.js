@@ -3,7 +3,7 @@
  * Calendario, horarios y envío por WhatsApp
  */
 (function () {
-  const WHATSAPP_NUMBER = "59892281911";
+  const WHATSAPP_NUMBER = "59891567464";
   const HOUR_START = 8;
   const HOUR_END = 20;
   const SLOT_MINUTES = 30;
